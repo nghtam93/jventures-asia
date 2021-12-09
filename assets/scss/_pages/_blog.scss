@@ -1,0 +1,227 @@
+.archive{
+	&__cat{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 50px;
+		li {
+			margin-bottom: 10px;
+		    &:not(:last-child){
+		    	margin-right: 12px;
+		    }
+		    a{
+		    	display: block;
+		    	padding: 12px 24px;
+		    	font-weight: 500;
+			    font-size: 16px;
+			    line-height: 24px;
+				color: #FFFFFF;
+				background: #012443;
+		    	border-radius: 8px;
+				transition: all .5s;
+				&.active, &:hover{
+					color: #6DC6DA;
+				}
+			}
+		}
+
+		&::-webkit-scrollbar {
+		  display: none;
+		}
+	}
+
+	&-featured{
+		position: relative;
+		padding: 20px 0 100px;
+		&:before{
+	        content: '';
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100%;
+	        height: 100%;
+    		background: url(../img/about-about-bg.png) no-repeat;
+	        background-size: cover;
+	        background-position: center;
+	        opacity: .2;
+	        z-index: -1;
+	        pointer-events: none;
+	    }
+	}
+	@media (max-width: 1199px){
+		&__cat{
+			justify-content: start;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			margin-left: calc(-1.5rem + -12px);
+			padding-left: calc(1.5rem + 12px);
+			margin-right: calc(-1.5rem + -12px);
+			li{
+				flex-grow: 1;
+				white-space: nowrap;
+				margin-bottom: 0;
+			}
+		}
+	}
+	@media (max-width: 991px){
+		&-featured {
+		    position: relative;
+		    padding: 20px 0 60px;
+		}
+	}
+}
+.new__item{
+    position: relative;
+    margin-bottom: 30px;
+    transition: all .5s;
+    &:hover{
+    	a{
+    		color: #fff;
+    	}
+    }
+    &__wrap{
+        position: relative;
+        z-index: 1;
+        display: block;
+        color: #fff;
+    }
+    &__thumb{
+    	position: relative;
+    }
+    .dnfix__thumb{
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+
+        &:before{
+        	content: '';
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	background: linear-gradient(180.14deg, rgba(0, 0, 0, 0) 55.71%, rgba(0, 0, 0, 0.7) 99.88%);
+        	z-index: 1;
+        	transition: all .5s;
+        	pointer-events: none;
+        }
+    }
+    &__meta{
+    	padding: 24px;
+    	background: linear-gradient(107.31deg, #6DC6DA -2.26%, #4063AD 112.69%);
+		border-radius: 0px 0px 8px 8px;
+    }
+    &__tax{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 2px 10px;
+        background: #4063AD;
+        color: #fff;
+        border-radius: 4px;
+        font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+
+    }
+    &__by{
+    	font-weight: normal;
+    	font-size: 14px;
+		line-height: 20px;
+		color: #fff;
+    }
+    &__date{
+        margin-bottom: 16px;
+        &:before{
+           content: "\e909";
+           font-family: 'icomoon';
+           display: inline-block;
+           margin-right: 5px;
+        }
+    }
+    &__title{
+        font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+		color: #011D52;
+        margin-bottom: 8px;
+        transition: all .5s;
+    }
+
+    &:hover{
+    	.dnfix__thumb{
+	        &:before{
+	        	opacity: 0;
+	        }
+	    }
+        .new__item__title{
+        	color: #fff;
+        }
+    }
+
+    @media (max-width:767px){
+        margin-bottom: 20px;
+        &.-s1{
+            .new__item{
+                &__wrap{
+                    display: flex;
+                }
+                &__thumb{
+                    flex: 0 0 auto;
+                    width: 100px;
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                }
+                &__meta{
+                    flex-grow: 1;
+                }
+            }
+        }
+
+        &__title{
+            font-size: 16px;
+            height: auto;
+                margin-bottom: 0;
+        }
+        &__by{
+            margin-bottom: 0;
+        }
+    }
+}
+
+//paging-navigation
+.paging-navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    color: #05D9A3;
+    .pagination{
+        .page-numbers{
+            width: 48px;
+		    height: 48px;
+		    margin: 0 4px;
+		    border: 1px solid #4063AD;
+		    transition: all .5s;
+		    background: transparent;
+		    text-align: center;
+		    color: #4F4F4F;
+		    border-radius: 50%;
+		    line-height: 48px;
+            &.current, &:hover{
+                background-color: #4063AD;
+                color:#fff;
+                opacity: 1;
+            }
+
+            &.prev, &.next{
+                opacity: 1;
+                background: transparent;
+            }
+        }
+
+    }
+}
