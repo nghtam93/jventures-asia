@@ -74,8 +74,9 @@ a {
 strong{
     font-weight: 700;
 }
+
 .wrapper{
-    overflow: hidden;
+    // overflow-x: hidden;
 }
 // Fix iframe
 .videoWrapper{position:relative;padding-bottom:56.25%; /* 16:9 */height:0;}

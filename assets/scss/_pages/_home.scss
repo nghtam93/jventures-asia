@@ -69,7 +69,7 @@
             }
             &:hover{
                 .el__item__title{
-                    color: #192651;
+                    color: #0546a1;
                 }
             }
             .dnfix__thumb{
@@ -318,6 +318,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #1081E8;
+                transition: all .5s;
+                &:hover{
+                    background: #1081E8;
+                    color: #fff;
+                }
                 &.-s2{
                     min-width: 290px;
                     margin-top: 40px;
@@ -372,7 +377,7 @@
             }
             &:hover{
                 .el__item__title{
-                    color: #192651;
+                    color: #0546a1;
                 }
             }
             &__title{
@@ -435,6 +440,9 @@
 
     @media (max-width: 1399px){
 
+        &-video .el__box__content {
+            height: 394px;
+        }
         &-news{
             .el__item.-small a .el__item__thumb {
                 width: 195px;
