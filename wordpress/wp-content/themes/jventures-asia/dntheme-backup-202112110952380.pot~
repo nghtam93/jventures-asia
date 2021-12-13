@@ -1,0 +1,285 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sky-venture\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-11 09:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.2\n"
+"X-Domain: dntheme"
+
+#. %s: Taxonomy singular name
+#: functions.php:247
+#, php-format
+msgid "%s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:107
+msgid ", "
+msgstr ""
+
+#. %s: post date
+#: inc/template-tags.php:76
+#, php-format
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#: functions.php:47
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: page-contact.php:53
+msgid "Address"
+msgstr ""
+
+#: functions.php:249
+msgid "Archives:"
+msgstr ""
+
+#: 404.php:32
+msgid "Back Homepage"
+msgstr ""
+
+#: functions.php:45
+msgid "Blog Sidebar"
+msgstr ""
+
+#. %s: post author
+#: inc/template-tags.php:46
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:125
+msgid "Categories"
+msgstr ""
+
+#: archive-video.php:50 page-home.php:190
+msgid "Celebrities, athletes and influencers flock to help..."
+msgstr ""
+
+#: inc/template-tags.php:944
+msgid "Chọn ngôn ngữ"
+msgstr ""
+
+#: footer.php:49
+msgid ""
+"Cointelegraph covers fintech, blockchain and Bitcoin bringing you the latest "
+"news and analyses on the future of money."
+msgstr ""
+
+#: footer.php:41
+msgid "COINTELEGRAPH NEWSLETTER"
+msgstr ""
+
+#: page-contact.php:38
+msgid "Contact"
+msgstr ""
+
+#: archive-video.php:49 page-home.php:189
+msgid "Currently Playing"
+msgstr ""
+
+#: inc/functions.php:34
+msgid "Danh mục"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Dntheme brings your site to life with header video and immersive featured "
+"images."
+msgstr ""
+
+#: page-contact.php:61
+msgid "E-mail"
+msgstr ""
+
+#. %s: Name of current post
+#: inc/template-tags.php:157
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: sidebar.php:22
+msgid "EDITOR’S CHOICE"
+msgstr ""
+
+#: footer.php:45
+msgid "Email address"
+msgstr ""
+
+#: footer.php:27 footer.php:78
+msgid "FOLLOW US"
+msgstr ""
+
+#: inc/template-tags.php:191
+#, php-format
+msgid "Front Page Section %1$s Placeholder"
+msgstr ""
+
+#: inc/dn-helpers.php:86
+msgid "Giá liên hệ"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://wordpress.org"
+msgstr ""
+
+#: 404.php:31
+msgid ""
+"It looks like the page you're trying to reach doesn't exist anymore, or "
+"maybe it just moved."
+msgstr ""
+
+#: archive-video.php:64 page-home.php:204 inc/functions.php:10
+#: inc/functions.php:11 inc/functions.php:19
+msgid "J Ventures TV"
+msgstr ""
+
+#: inc/functions.php:8
+msgctxt "J Ventures TV General Name"
+msgid "J Ventures TV"
+msgstr ""
+
+#: inc/functions.php:9
+msgctxt "J Ventures TV Singular Name"
+msgid "J Ventures TV"
+msgstr ""
+
+#. Name of the theme
+msgid "jventures-asia"
+msgstr ""
+
+#: archive-video.php:109 archive.php:101 page-home.php:429
+msgid "Load more articles"
+msgstr ""
+
+#: functions.php:23
+msgid "Main Menu"
+msgstr ""
+
+#: template-parts/content-single-video.php:40
+msgid "Maybe you are interested"
+msgstr ""
+
+#: functions.php:239
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: header.php:92
+msgid "Nhập từ khóa cần tìm..."
+msgstr ""
+
+#: search.php:18
+msgid "Nothing Found"
+msgstr ""
+
+#: 404.php:27
+msgid "Oops!"
+msgstr ""
+
+#. Name of the template
+msgid "Page Contact"
+msgstr ""
+
+#. Name of the template
+msgid "Page Home"
+msgstr ""
+
+#: 404.php:28
+msgid "Page not found"
+msgstr ""
+
+#: page-contact.php:45
+msgid "Phone"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Nhập từ khóa cần tìm &hellip;"
+msgstr ""
+
+#: template-parts/content-single.php:34
+msgid "Related news"
+msgstr ""
+
+#: inc/template-tags.php:976
+msgid "Rút gọn"
+msgstr ""
+
+#: search.php:40
+msgid ""
+"Rất tiếc, nhưng không có gì phù hợp với cụm từ tìm kiếm của bạn. Vui lòng "
+"thử lại với một số từ khóa khác nhau."
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "Sorry, this item has no data yet."
+msgstr ""
+
+#: footer.php:46
+msgid "SUBSCRIBE NOW"
+msgstr ""
+
+#: inc/template-tags.php:129
+msgid "Tags: "
+msgstr ""
+
+#: inc/functions.php:32
+msgctxt "Taxonomy General Name"
+msgid "Danh mục J Ventures TV"
+msgstr ""
+
+#: inc/functions.php:33
+msgctxt "Taxonomy Singular Name"
+msgid "Danh mục J Ventures TV"
+msgstr ""
+
+#: footer.php:36
+msgid "Terms of services and Privacy policy"
+msgstr ""
+
+#: template-parts/page-none.php:1
+msgid "There are currently no articles available"
+msgstr ""
+
+#: inc/functions.php:14
+msgid "Thêm"
+msgstr ""
+
+#: inc/functions.php:12 inc/functions.php:13
+msgid "Thêm mới"
+msgstr ""
+
+#: search.php:16
+#, php-format
+msgid "Tìm kiếm với từ khóa: %s"
+msgstr ""
+
+#: page-home.php:301
+msgid "View more"
+msgstr ""
+
+#. Author of the theme
+msgid "wordpress.org"
+msgstr ""
+
+#: inc/template-tags.php:975
+msgid "Xem thêm"
+msgstr ""
+
+#: functions.php:237
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""

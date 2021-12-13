@@ -109,15 +109,14 @@
 @keyframes shine{
     100%{left:125%}
 }
-@-webkit-keyframes Mousex{
-  from{-webkit-transform:translate(0,0px);}
-  65%{-webkit-transform:translate(0,15px);}
-  to{-webkit-transform:translate(0,-0px);}
-}
+// @-webkit-keyframes Mousex{
+//   from{-webkit-transform:translate(0,0px);}
+//   50%{-webkit-transform:translate(0,10px);}
+//   to{-webkit-transform:translate(0,-0px);}
+// }
 @-moz-keyframes Mouse{
   from{-moz-transform:translate(0,0px);}
-  65%{-moz-transform:translate(0,15px);}
-  to{-moz-transform:translate(0,-0px);}
+  to{-moz-transform:translate(0,6px);}
 }
 
 .page__header{
