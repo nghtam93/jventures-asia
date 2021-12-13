@@ -205,6 +205,8 @@
                 .el__item{
                     &__meta{
                         position: absolute;
+                        width: 100%;
+                        left: 0;
                         bottom: 0;
                         padding: 24px 30px;
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
@@ -404,6 +406,7 @@
         background: url(../img/home-new-slider.jpg) no-repeat;
         background-size: cover;
         background-position: center;
+        overflow: hidden;
         .el__item{
             position: relative;
 
@@ -448,6 +451,11 @@
                 width: 195px;
                 margin-right: 18px;
             }
+        }
+    }
+    @media (max-width: 1299px){
+        &-news-slider .slick-arrow {
+            --arrow: 0;
         }
     }
     @media (max-width: 1199px){

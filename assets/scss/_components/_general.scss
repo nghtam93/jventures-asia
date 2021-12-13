@@ -4,6 +4,9 @@
     &.-white{
         .sc__header__title{
             color: #fff;
+            a{
+                color: #fff;
+            }
         }
     }
     &__title{
@@ -13,6 +16,11 @@
         display: flex;
         align-items: center;
         color: #192651;
+        a{
+            display: flex;
+            align-items: center;
+            color: #192651;
+        }
         img{
             width: 45px;
             height: 45px;
@@ -66,13 +74,22 @@
         top: 11px;
         left: 50px;
     }
+    &.active{
+        cursor: none!important;
+        &:before{
+            animation:spinner-rotate 5s infinite linear;
+        }
+    }
     &:hover{
         background: #1081E8;
         color: #fff;
     }
 }
 
-// Effect border
+// Effect
+@keyframes spinner-rotate{
+    to{transform:rotate(360deg);}
+}
 
 @keyframes animate{
     0%{box-shadow:0 0 50px #0F0,inset 0 0 50px #0F0;filter:hue-rotate(0deg);}
@@ -109,14 +126,15 @@
 @keyframes shine{
     100%{left:125%}
 }
-// @-webkit-keyframes Mousex{
-//   from{-webkit-transform:translate(0,0px);}
-//   50%{-webkit-transform:translate(0,10px);}
-//   to{-webkit-transform:translate(0,-0px);}
-// }
+@-webkit-keyframes Mousex{
+  from{-webkit-transform:translate(0,0px);}
+  65%{-webkit-transform:translate(0,15px);}
+  to{-webkit-transform:translate(0,-0px);}
+}
 @-moz-keyframes Mouse{
   from{-moz-transform:translate(0,0px);}
-  to{-moz-transform:translate(0,6px);}
+  65%{-moz-transform:translate(0,15px);}
+  to{-moz-transform:translate(0,-0px);}
 }
 
 .page__header{
@@ -140,10 +158,10 @@
     }
     .entry-title{
         font-weight: 500;
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 38px;
+        line-height: 45px;
         text-align: center;
-        color: #6DC6DA;
+        color: #1f293d;
     }
     @media (max-width: 991px){
         &__title {
@@ -191,6 +209,14 @@
     top: 70px;
     padding-bottom:10px;
 }
+.admin-bar{
+    @media (min-width: 992px) {
+        .widget__fix{
+            top: 100px;
+        }
+    }
+}
+
 .widget-title {
     font-weight: 500;
     font-size: 24px;
@@ -210,7 +236,7 @@
     position: relative;
 }
 .box-search .search-submit {
-position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     border: 0;

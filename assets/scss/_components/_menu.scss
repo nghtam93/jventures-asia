@@ -49,7 +49,7 @@
             margin: 0 14px;
             &.menu-item-has-children{
                 &>a:after {
-                    content: "\e90b";
+                    content: "\e90c";
                     font-family: 'icomoon';
                     font-size: 5px;
                     margin-left: 5px;
@@ -65,7 +65,7 @@
             }
         }
 
-        &>li:hover a, &>li.active a, .current_page_parent a, .current-menu-parent a{
+        &>li:hover a, &>li.active a, .current-menu-item>a, .current_page_parent a, .current-menu-parent a{
             color:#1081E8;
             // background:#463c1f;
         }
@@ -116,7 +116,6 @@
 
     }
     @media ( max-width: 1199px ) {
-
 
     }
 

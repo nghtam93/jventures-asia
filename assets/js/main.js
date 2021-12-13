@@ -86,18 +86,18 @@ $(document).ready(function(){
         $(this).next().toggleClass('dropdown-languages');
         isClicked = true;
     });
-    $('.languages ul li').click(function() {
-        var $liIndex = $(this).index() + 1;
-        $('.languages ul li').removeClass('active');
-        $('.languages ul li:nth-child('+$liIndex+')').addClass('active');
-        var $getLang = $(this).html();
-        $('.languages__label').html($getLang);
+    // $('.languages ul li').click(function() {
+    //     var $liIndex = $(this).index() + 1;
+    //     $('.languages ul li').removeClass('active');
+    //     $('.languages ul li:nth-child('+$liIndex+')').addClass('active');
+    //     var $getLang = $(this).html();
+    //     $('.languages__label').html($getLang);
 
-        $('.languages__content').removeClass('dropdown-languages')
-    });
+    //     $('.languages__content').removeClass('dropdown-languages')
+    // });
 
-    $('.languages').mousedown(function(e){ e.stopPropagation(); });
-    $(document).mousedown(function(e){ $('.languages__content').removeClass('dropdown-languages'); });
+    // $('.languages').mousedown(function(e){ e.stopPropagation(); });
+    // $(document).mousedown(function(e){ $('.languages__content').removeClass('dropdown-languages'); });
 
 
     /*----Get Header Height ---*/
@@ -193,10 +193,61 @@ $(document).ready(function(){
                 }
             ]
         });
-
-
-
     }
+
+    //check home
+    var offset = 12; // khái báo số lượng bài viết đã hiển thị
+    $('.js-loadmore').click(function(event) {
+
+        var thiz = $(this)
+        thiz.addClass('active')
+        event.preventDefault()
+        var post_type = thiz.data('post_type')
+        var catid = thiz.data('catid')
+        var template = thiz.data('template')
+
+        $.ajax({ // Hàm ajax
+            url : dntheme_params['ajax_url'], // Nơi xử lý dữ liệu
+            data : {
+                action: "loadmore",
+                post_type: post_type,
+                catid: catid,
+                offset: offset,
+                template: template,
+            },
+            beforeSend: function(){
+
+            },
+            success: function(response) {
+
+                if(response){
+                    $('.js-loadcontent').append(response);
+                    offset = offset + 12;
+                }else{
+                    thiz.remove()
+                }
+
+                if(thiz.data('number') <= 0){
+                    thiz.remove()
+                }
+
+                thiz.removeClass('active')
+
+                thiz.attr("data-number",$('.js-loadmore-stt').val());
+                if(thiz.attr('data-number') <= 0){
+                    thiz.remove()
+                }
+                $('.js-loadmore-stt').remove()
+            },
+            error: function( jqXHR, textStatus, errorThrown ){
+                //Làm gì đó khi có lỗi xảy ra
+                console.log( 'The following error occured: ' + textStatus, errorThrown );
+            }
+       });
+    });
+
+
+
     if($('body').hasClass( "single" )){
         $('.related__slider').slick({
             slidesToShow: 3,

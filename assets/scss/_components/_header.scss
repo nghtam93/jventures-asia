@@ -232,7 +232,7 @@
 /* Fix WP*/
 .admin-bar{
 	@media (min-width: 992px) {
-	    .header.-fix, .nav__mobile{
+	    .main__nav.is-sticky, .nav__mobile{
 		    top: 32px;
 		}
 	}
